@@ -21,7 +21,7 @@ public class UploadFileController {
     private String nginx;
     @Value("${upload.port}")
     private String port;
-    @Value("{upload.rootPath}")
+    @Value("${upload.rootPath}")
     private String rootPath;
 
     @CrossOrigin(origins = "*", allowCredentials = "true", maxAge = 3600)
