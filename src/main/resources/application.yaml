@@ -1,0 +1,5 @@
+server:
+  port: 8999
+upload:
+  addr: 42.193.46.47
+  port: 8085
