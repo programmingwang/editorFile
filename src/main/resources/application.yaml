@@ -3,3 +3,4 @@ server:
 upload:
   addr: 42.193.46.47
   port: 8085
+  rootPath: '/var/www/editorfile'

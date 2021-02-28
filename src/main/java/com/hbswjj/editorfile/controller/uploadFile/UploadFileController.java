@@ -21,6 +21,8 @@ public class UploadFileController {
     private String nginx;
     @Value("${upload.port}")
     private String port;
+    @Value("{upload.rootPath}")
+    private String rootPath;
 
     @CrossOrigin(origins = "*", allowCredentials = "true", maxAge = 3600)
     @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
@@ -28,7 +30,7 @@ public class UploadFileController {
     public WangEditor uploadFile(@RequestParam("file") MultipartFile file) {
         //本地使用,上传位置
 //        String rootPath = "D://uploads//";
-        String rootPath = "/var/www/editorfile";
+//        String rootPath = "/var/www/editorfile";
         //文件的完整名称,如spring.jpeg
         String filename = file.getOriginalFilename();
         //文件名,如spring
