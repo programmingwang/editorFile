@@ -65,7 +65,6 @@ public class UploadFileController {
         String fileUrl = "http://"+nginx+":"+port+"/upload/" + newFilename;
         //System.out.println(fileUrl);
         String[] data = {fileUrl};
-        WangEditor we = new WangEditor(data);
-        return we;
+        return new WangEditor(data);
     }
 }
